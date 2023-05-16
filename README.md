@@ -14,7 +14,7 @@ First, set the Node.js buildpack to compile your assets:
 $ heroku buildpacks:set heroku/nodejs
 ```
 
-Next, add the Node Cleanup buildpack to get rid of the `node_modules` directory:
+Next, add the Node Cleanup buildpack to get rid of the `node_modules` directory (make sure the index is correct):
 
 ```bash
 $ heroku buildpacks:set --index 1 https://github.com/leoafarias/heroku-buildpack-node-modules-cleanup
